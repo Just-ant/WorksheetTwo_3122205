@@ -4,32 +4,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-	class ConversionsTest {
-	
+class ConversionsTest {
+
 		    Conversions conv = new Conversions();
 		
 		    @Test
 		    void testEuroToDollar() {
-		        assertEquals(12.0, conv.euroToDollar(10)); // Should be 11.0, so this fails
+		        assertEquals(11.0, conv.euroToDollar(10));
 		    }
 		
 		    @Test
 		    void testDollarToEuro() {
-		        assertEquals(8.0, conv.dollarToEuro(10)); // Should be 9.0, so this fails
+		        assertEquals(9.0, conv.dollarToEuro(10));
 		    }
 		
 		    @Test
 		    void testStringToInteger() {
-		        assertEquals(456, conv.stringToInteger("123")); // Should be 123, so this fails
+		        assertEquals(123, conv.stringToInteger("123"));
 		    }
 		
 		    @Test
 		    void testIntegerToString() {
-		        assertEquals("456", conv.integerToString(123)); // Should be "123", so this fails
+		        assertEquals("123", conv.integerToString(123));
 		    }
 		
 		    @Test
 		    void testSwitchCase() {
-		        assertEquals("Hello World", conv.switchCase("Hello World")); // Should be "hELLO wORLD", so this fails
+		        assertEquals("hELLO wORLD", conv.switchCase("Hello World"));
 		    }
-	}
+}
